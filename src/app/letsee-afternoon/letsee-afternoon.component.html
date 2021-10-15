@@ -1,0 +1,12 @@
+<div>
+    de huidige tijd:{{currenttime|date:"hh:mm:ss"}}
+</div>
+<div *ngIf="currenttime.getHours()<12">
+het is voormiddag
+</div>
+
+<div *ngIf="currenttime.getHours()>12">
+het is namiddag
+</div>
+
+

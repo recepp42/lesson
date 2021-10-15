@@ -1,0 +1,25 @@
+<table style="border: 2px solid red;">
+    <th>
+        graden
+    </th>
+    
+<tr>
+<tr *ngFor="let element of graden;">
+<td style="border: 2px solid red;">{{element}}</td>
+<td *ngIf="element==0">
+Kans op gladheid
+</td>
+<td *ngIf="element>=1&&element<=3">
+Kans op sneeuw
+</td>
+<td *ngIf="element>17">
+zacht weertje
+</td>
+</tr>
+
+
+
+</table>
+
+
+

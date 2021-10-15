@@ -1,0 +1,15 @@
+<table>
+<th>FamilyName</th>
+<th>Name</th>
+<th>BirthDay</th>
+<th>Age</th>
+<tr *ngFor="let item of people">
+<td>
+    item.familyName();
+</td>
+<td>item.Name()</td>
+<td>item.birthDate()</td>
+<td>calculateAge(item.birthDate())</td>
+</tr>
+
+</table>
